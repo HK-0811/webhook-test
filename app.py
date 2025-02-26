@@ -5,6 +5,11 @@ import os
 app = fastapi.FastAPI()
 
 
+
+@app.get('/')
+async def root():
+    return {"status": "ok"}
+
 @app.post('/training')
 async def training(request: Request):
     training_response = await request.json()
