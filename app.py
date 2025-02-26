@@ -1,6 +1,7 @@
 import fastapi
 from fastapi import Request
 import uvicorn
+import os
 app = fastapi.FastAPI()
 
 
